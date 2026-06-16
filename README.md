@@ -71,7 +71,7 @@ Currently focused on building professional websites for small businesses across 
 
 ## 📬 Let's Connect
 
-**Portfolio:** [jerometechguy.vercel.app](https://jerometechguy.vercel.app)  
+**Portfolio:** [jerometechguy.vercel.app](https://jeromekasagga.vercel.app)  
 **Email:** jerometechguy@gmail.com  
 **WhatsApp:** +256 761 577 607  
 **Location:** Kampala, Uganda 🇺🇬
