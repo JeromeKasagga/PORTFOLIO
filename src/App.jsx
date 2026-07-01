@@ -328,7 +328,8 @@ function ProjectCard({ project, delay = 0 }) {
   return (
     <div
       ref={ref}
-      className="reveal card-hover bg-navy-card border border-white/8 flex flex-col"
+      onClick={() => window.open(project.link, '_blank', 'noopener,noreferrer')}
+      className="reveal card-hover bg-navy-card border border-white/8 flex flex-col cursor-pointer"
       style={{ transitionDelay: `${delay}ms` }}
     >
       {/* Card top bar */}
@@ -359,17 +360,14 @@ function ProjectCard({ project, delay = 0 }) {
         </div>
 
         {/* CTA */}
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
+        <span
           className="btn-primary self-start mt-auto text-xs"
         >
-          Acessar
+          Visit Site
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="square" strokeWidth="2" d="M7 17L17 7M7 7h10v10"/>
           </svg>
-        </a>
+        </span>
       </div>
     </div>
   )
@@ -384,7 +382,7 @@ function ProjectsSection() {
 
       <div className="max-w-5xl mx-auto px-6">
         <div ref={titleRef} className="reveal mb-14">
-          <div className="section-marker mb-4">Laboratório</div>
+          <div className="section-marker mb-4">Portfolio</div>
           <h2 className="font-bold text-text-primary text-3xl sm:text-4xl">
             Featured Projects
           </h2>
@@ -414,7 +412,7 @@ function AboutSection() {
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left — identity card */}
           <div ref={leftRef} className="reveal">
-            <div className="section-marker mb-6">Sobre</div>
+            <div className="section-marker mb-6">About</div>
 
             {/* Avatar placeholder */}
             <div className="mb-8 flex flex-col items-start gap-6">
@@ -477,7 +475,7 @@ function AboutSection() {
           {/* Right — bio + skills */}
           <div ref={rightRef} className="reveal reveal-delay-2">
             <h3 className="font-semibold text-text-primary text-xl mb-4">
-              Conheça um pouco sobre mim
+              Get to know me
             </h3>
             <div className="space-y-4 text-text-secondary text-sm leading-relaxed mb-8">
               <p>
@@ -522,7 +520,7 @@ function ContactSection() {
 
       <div className="max-w-5xl mx-auto px-6">
         <div ref={titleRef} className="reveal mb-14">
-          <div className="section-marker mb-4">Contato</div>
+          <div className="section-marker mb-4">Contact</div>
           <h2 className="font-bold text-text-primary text-3xl sm:text-4xl mb-3">
             Let's Work Together
           </h2>
